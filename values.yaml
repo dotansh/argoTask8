@@ -1,13 +1,4 @@
-replicaCount: 4
-
+replicaCount: 2
 service:
-  type: ClusterIP
-  port: 80
-
-resources:
-  requests:
-    memory: 64Mi
-    cpu: 50m
-  limits:
-    memory: 128Mi
-    cpu: 100m
+  type: LoadBalancer
+  port: 8080
